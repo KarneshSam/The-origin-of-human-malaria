@@ -16,3 +16,11 @@ blastx -query ../results/02_CDS/Ht.fna \
 # -num_description: Number of database sequences to show in the description section
 # -num_alignment: Number of sequence alignments to display for each query
 # -num_threads: Number of CPU threads
+
+# identify the bird genomic content scaffolds
+python datParser.py \
+../results/03_Blast/ht.blastx \
+../results/02_CDS/Ht.fna \
+../resources/database/taxonomy.dat \
+../resources/database/uniprot_sprot.dat \
+> ../results/03_Blast/scaffolds_x1.txt
