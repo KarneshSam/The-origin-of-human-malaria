@@ -71,7 +71,7 @@ fasta_files = {
 }
 
 # output directory
-outdir = "../results/03_Busco/FASTA"
+outdir = "../results/06_BuscoIdfa"
 os.makedirs(outdir, exist_ok=True)
 
 # load fasta sequences into dictionaries
