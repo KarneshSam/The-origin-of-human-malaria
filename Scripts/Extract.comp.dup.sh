@@ -18,3 +18,6 @@ END {
     for (id in best) print best[id]
 }
 ' full_table.tsv > one_to_one.tsv
+
+# extract the geneid and busco id
+awk '{print $1, "\t"$3}' one_to_one.tsv > one_to_one_id.tsv
