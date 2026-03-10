@@ -24,3 +24,9 @@ python datParser.py \
 ../resources/database/taxonomy.dat \
 ../resources/database/uniprot_sprot.dat \
 > ../results/03_Blast/scaffolds_x1.txt
+
+# remove the bird scaffold
+python removeBirdScaffold.py \
+../resources/genome/Haemoproteus_tartakovskyi.filter.genome \
+../results/03_Blast/scaffolds_x1.txt \
+../resources/genome/Ht_clean.fasta
