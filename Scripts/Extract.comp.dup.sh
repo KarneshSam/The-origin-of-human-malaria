@@ -3,7 +3,7 @@
 
 for sp in Ht Pb Pc Pf Pk Pv Py Tg
 do
-    cd ../results/03_Busco/$sp/run_apicomplexa_odb10/
+    cd ../results/05_Busco/$sp/run_apicomplexa_odb10/
 
     awk '!/^#/ {
       # Only consider Complete or Duplicated
