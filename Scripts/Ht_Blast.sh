@@ -1,10 +1,10 @@
 # using blastx
 # the blast was performed on Swissprot database
 
-blastx -query ../results/02_CDS/Ht.fna \
+blastx -query ../results/02_CDS/Ht2.fna \
 -db SwissProt \
 -evalue 1e-10 \
--out ../results/03_Blast/ht.blastx \
+-out ../results/03_Blast/ht2.blastx \
 -num_descriptions 10 \
 -num_alignments 5 \
 -num_threads 20
@@ -19,8 +19,8 @@ blastx -query ../results/02_CDS/Ht.fna \
 
 # identify the bird genomic content scaffolds
 python datParser.py \
-../results/03_Blast/ht.blastx \
-../results/02_CDS/Ht.fna \
+../results/03_Blast/ht2.blastx \
+../results/02_CDS/Ht2.fna \
 ../resources/database/taxonomy.dat \
 ../resources/database/uniprot_sprot.dat \
 > ../results/03_Blast/scaffolds_x1.txt
