@@ -1,0 +1,20 @@
+# for extracting complete
+# one duplicate Busco Id
+# the each BUSCO produces a directory for an analysis
+# the parent directory contains child directory (run_apicomplexa_odb12)
+# under this child directory run this script
+
+awk '!/^#/ {
+    # Only consider Complete or Duplicated
+    if ($2=="Complete") {
+       # creates an array
+        best[$1]=$0      # Prefer Complete; $1: BUSCO id
+    }
+    else if ($2=="Duplicated" && !($1 in best)) {
+        best[$1]=$0      # Keep first duplicated only by checking !($1 in best)
+    }
+}
+END {
+    for (id in best) print best[id]
+}
+' full_table.tsv > one_to_one.tsv
