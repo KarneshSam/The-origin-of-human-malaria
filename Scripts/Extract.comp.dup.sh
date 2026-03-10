@@ -21,3 +21,7 @@ END {
 
 # extract the geneid and busco id
 awk '{print $1, "\t"$3}' one_to_one.tsv > one_to_one_id.tsv
+
+# move the extracted file to a desired path for further analysis
+mv one_to_one_id.tsv ../../ids/
+
