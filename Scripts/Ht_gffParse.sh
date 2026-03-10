@@ -1,7 +1,11 @@
+# minor change before gffParse
+cat ../results/01_gene_pred/Ht.gtf | sed "s/ GC=.*\tGeneMark.hmm/\tGeneMark.hmm/" > ../results/01_gene_pred/Ht2.gtf
+
+
 # gffParse.pl is used to extract the fasta sequence of both nucleotide and amino acid sequence
 
 gffParse.pl -i ../resources/genome/Haemoproteus_tartakovskyi.filter.genome \
--g ../results/01_gene_pred/Ht.gtf \
+-g ../results/01_gene_pred/Ht2.gtf \
 -f CDS \
 -b ../results/02_CDS/Ht \
 -p -c -a gene_id
