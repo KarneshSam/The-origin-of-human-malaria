@@ -153,6 +153,11 @@ Bensch S, et al. (2016). The origin and diversification of *Haemoproteus* parasi
 * **Name:** Karnesh Sampath, Dag Ahren (Professor), Mirjam Müller (Phd), Eleni Theofania Skorda (Phd)
 * **Date:** 02.03.2025
 
+---
+
+> **Note:**
+> * The working directory structure described above can be followed by the user but the resources and result data were not included due to large space
+
 
 
 
