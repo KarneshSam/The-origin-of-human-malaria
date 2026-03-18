@@ -148,7 +148,7 @@ All tools are managed through Conda environments for reproducibility.
 
 ## 9. Result
  
-![Consensus Phylogenetic Tree](docs/phylogenetic_tree.png)
+![Consensus Phylogenetic Tree](docs/phylogenytree.png)
  
 The consensus phylogenetic tree shows *Haemoproteus tartakovskyi* (Ht) grouping with *Plasmodium falciparum* (Pf) as a distinct clade, separate from the other mammalian *Plasmodium* species, with *Toxoplasma gondii* (Tg) correctly placed as the outgroup. This topology supports the hypothesis that *P. falciparum* shares a closer evolutionary origin with the avian malaria parasite rather than with the other mammalian *Plasmodium* species.
 
